@@ -18,10 +18,16 @@ from utils.data_manager import (
 def render():
     st.title("📈 BI Dashboard")
 
-    df = get_clean_df() or get_df()
-    if df is None:
-        st.warning("⚠️ Please upload a dataset first (Upload Data page).")
-        return
+    df = get_clean_df()
+
+df = get_clean_df()
+
+if df is None:
+    df = get_df()
+
+if df is None or df.empty:
+    st.warning("⚠️ Please upload a dataset first (Upload Data page).")
+    return
 
     num_cols  = get_numeric_cols(df)
     cat_cols  = get_cat_cols(df)
