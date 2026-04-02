@@ -73,8 +73,6 @@ with st.sidebar:
             "🧹  Data Cleaning",
             "🔍  EDA Analysis",
             "📈  BI Dashboard",
-            "🤖  ML Models",
-            "🎯  Predictions",
             "📉  Forecasting",
             "💡  Insights Report",
         ],
