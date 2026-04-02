@@ -99,10 +99,6 @@ elif key == "EDA Analysis":
     from dashboard.eda import render
 elif key == "BI Dashboard":
     from dashboard.bi import render
-elif key == "ML Models":
-    from dashboard.ml import render
-elif key == "Predictions":
-    from dashboard.predictions import render
 elif key == "Forecasting":
     from dashboard.forecasting import render
 elif key == "Insights Report":
