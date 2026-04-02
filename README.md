@@ -112,15 +112,15 @@ bi_ml_platform/
                              │ function calls
 ┌────────────────────────────▼────────────────────────────────────┐
 │            utils/data_manager.py  (Logic Layer)                 │
-│                                                                  │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐   │
-│  │  Loading │  │ Cleaning │  │   EDA    │  │  Forecasting │   │
-│  │ CSV/XLSX │  │ 6-steps  │  │ Stats    │  │ ARIMA/Linear │   │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────────┘   │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │              Streamlit Cache Layer                        │  │
-│  │  @st.cache_data  ·  @st.cache_resource                  │  │
-│  └──────────────────────────────────────────────────────────┘  │
+│                                                                 │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐     │
+│  │  Loading │  │ Cleaning │  │   EDA    │  │  Forecasting │     │
+│  │ CSV/XLSX │  │ 6-steps  │  │ Stats    │  │ ARIMA/Linear │     │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────────┘     │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │              Streamlit Cache Layer                       │   │
+│  │  @st.cache_data  ·  @st.cache_resource                   │   │
+│  └──────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -176,8 +176,8 @@ Input: date column + value column + periods ahead + method
               │
               ▼
     ┌─────────────────┐     Success    ┌───────────────────┐
-    │  ARIMA (1,1,1)  │────────────▶  │  Forecast + 95%CI │
-    │  statsmodels    │               └───────────────────┘
+    │  ARIMA (1,1,1)  │────────────▶  │ Forecast + 95%CI│
+    │  statsmodels    │                └───────────────────┘
     └─────────────────┘
               │ Failure (short series / non-convergence)
               ▼
@@ -462,5 +462,3 @@ git push origin feature/your-feature-name
 *Built with ❤️ using Python + Streamlit*
 
 </div>
-Author
-KHUSHBIR KAUR BAMRAH
