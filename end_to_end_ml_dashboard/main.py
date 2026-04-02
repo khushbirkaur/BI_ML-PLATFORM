@@ -10,7 +10,7 @@ Run with:
 import streamlit as st
 
 st.set_page_config(
-    page_title="BI + ML Platform",
+    page_title="Automated_BI_Dashboard_&_Forcasting",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
