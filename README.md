@@ -12,7 +12,7 @@
 ### 🚀 A fully interactive, browser-based Business Intelligence platform
 ### built entirely in Python — no expensive tools, no coding required.
 
-**[🌐 Live Demo](https://bimlplatform-8aqd7my7y6xhlz8egwv6pl.streamlit.app)** &nbsp;|&nbsp;
+**[🌐 Live Demo](https://automated-bi-dashboard-aqgwznhnvxf3me2s44tz3v.streamlit.app/)** &nbsp;|&nbsp;
 
 </div>
 
@@ -44,8 +44,11 @@ Think of it as a **lightweight, free alternative to Power BI or Tableau**, with 
 
 ## 🖥️ Live Demo
 
-> **Try it right now — no sign-up, no installation:**
-> ### 👉 [https://bimlplatform-8aqd7my7y6xhlz8egwv6pl.streamlit.app](https://bimlplatform-8aqd7my7y6xhlz8egwv6pl.streamlit.app)
+## 🖥 Live Demo
+
+> **Try the platform instantly — no sign-up or installation required.**
+
+### 👉 [Open the BI Dashboard](https://automated-bi-dashboard-aqgwznhnvxf3me2s44tz3v.streamlit.app/)
 
 ---
 
@@ -209,7 +212,7 @@ Each finding is colour-coded: 🔴 High &nbsp; 🟡 Medium &nbsp; 🟢 Low
 ## ⚡ Quick Start
 
 ### Option 1: Use the Live App (No Setup)
-👉 Visit **[https://bimlplatform-8aqd7my7y6xhlz8egwv6pl.streamlit.app](https://bimlplatform-8aqd7my7y6xlz8egwv6pl.streamlit.app)**
+👉 Visit **[https://automated-bi-dashboard-aqgwznhnvxf3me2s44tz3v.streamlit.app/](https://automated-bi-dashboard-aqgwznhnvxf3me2s44tz3v.streamlit.app/)**
 
 ### Option 2: Run Locally
 
