@@ -44,8 +44,6 @@ Think of it as a **lightweight, free alternative to Power BI or Tableau**, with 
 
 ## 🖥️ Live Demo
 
-## 🖥 Live Demo
-
 > **Try the platform instantly — no sign-up or installation required.**
 
 ### 👉 [Open the BI Dashboard](https://automated-bi-dashboard-aqgwznhnvxf3me2s44tz3v.streamlit.app/)
