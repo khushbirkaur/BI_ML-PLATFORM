@@ -91,42 +91,6 @@ bi_ml_platform/
 > **Architecture principle:** Dashboard pages handle display only. All computation lives in `data_manager.py`. Pages never calculate — they only call and show.
 
 ---
-
-## 🏗️ System Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        BROWSER (User)                           │
-└────────────────────────────┬────────────────────────────────────┘
-                             │ HTTP
-┌────────────────────────────▼────────────────────────────────────┐
-│                    main.py  (Entry Point)                       │
-│   Sets page config │ Renders sidebar │ Routes to page module    │
-└────────────────────────────┬────────────────────────────────────┘
-                             │ imports & calls render()
-┌────────────────────────────▼────────────────────────────────────┐
-│              dashboard/  (Presentation Layer)                   │
-│  home │ upload │ cleaning │ eda │ bi │ forecasting │ insights   │
-│                 ↕ reads/writes session_state                    │
-│                 ↕ calls functions from data_manager             │
-└────────────────────────────┬────────────────────────────────────┘
-                             │ function calls
-┌────────────────────────────▼────────────────────────────────────┐
-│            utils/data_manager.py  (Logic Layer)                 │
-│                                                                 │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐     │
-│  │  Loading │  │ Cleaning │  │   EDA    │  │  Forecasting │     │
-│  │ CSV/XLSX │  │ 6-steps  │  │ Stats    │  │ ARIMA/Linear │     │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────────┘     │
-│  ┌──────────────────────────────────────────────────────────┐   │
-│  │              Streamlit Cache Layer                       │   │
-│  │  @st.cache_data  ·  @st.cache_resource                   │   │
-│  └──────────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────────┘
-```
-
----
-
 ## 📄 Page-by-Page Guide
 
 ### 🏠 Home
