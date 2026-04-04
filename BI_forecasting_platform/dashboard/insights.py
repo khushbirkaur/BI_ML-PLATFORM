@@ -15,9 +15,13 @@ from utils.data_manager import (
 
 
 def render():
-    st.title("💡 Insights Report")
+    st.title("📊 Insights")
 
-    df = get_clean_df() or get_df()
+    df = get_clean_df()
+
+    if df is None or df.empty:
+        df = get_df()
+
     if df is None:
         st.warning("⚠️ Please upload a dataset first (Upload Data page).")
         return
